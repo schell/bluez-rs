@@ -80,7 +80,7 @@ impl<'a> BlueZClient<'a> {
     }
 
     #[inline]
-    async fn exec_command<F: FnOnce(Controller, Option<Bytes>) -> Result<T>, T>(
+    pub async fn exec_command<F: FnOnce(Controller, Option<Bytes>) -> Result<T>, T>(
         &mut self,
         opcode: Command,
         controller: Controller,

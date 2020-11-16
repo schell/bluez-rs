@@ -31,4 +31,3 @@ doc = false
 name = "list"
 path = "examples/list.rs"
 doc = false
-
